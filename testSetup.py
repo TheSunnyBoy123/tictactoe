@@ -7,3 +7,6 @@ def sum (a,b):
 x=10
 y=20
 sum(x,y)
+
+def intro ():
+    print(hi i am sanchay)
