@@ -4,26 +4,20 @@ board=[["-", "-", "-"],
 isX = True
 a=0
 def printBoard(board, isX, a):
-    for i in range(0, 3):
-        for j in range(0,3):
-            if j == 2:
-                print(board[i][j], end = " ")
-            else:
-                print(board[i][j], end = "|")
+    print(board[0][0] + "│" + board[0][1] + "│" + board[0][2])
+    print("─────")
+    print(board[1][0] + "│" + board[1][1] + "│" + board[2][2])
+    print("─────")
+    print(board[2][0] + "│̐̐̐̐̐̐̐̐̐̐̐̐̐̐̐̐̐̐̐̐̐̐̐̐̐̐̐̐̐̐̐̐̐̐̐̐̐̐̐̐̐̐̐̐̐̐̐̐̐̐" + board[2][1] + "│" + board[2][2])
 
-        if (i==2):
-            print()
-        else:
-            print()
-            print("-----")
 
     gameCheck(board, isX, a)
     userInput(board, isX, a)
 
 #user input
 def userInput(board, isX, a):
-    row=int(input("enter the row to put whatever")) #what the USER chooses
-    column=int(input("enter the colum no. to put whatever"))#what the USER chooses
+    row=int(input("Enter row \n")) #what the USER chooses
+    column=int(input("Enter column \n"))#what the USER chooses
 
 
     if(a==9):
